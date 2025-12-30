@@ -71,6 +71,8 @@ namespace Hotel.Models
             }
             else
             {
+                Console.WriteLine($"Reserva para mais de 10 dias: desconto de {DescontoPercentual}% aplicado! ");
+
                 return (this.DiasReservados * this.suite.ValorDiaria) * (1 - DescontoPercentual / 100);
 
             }
